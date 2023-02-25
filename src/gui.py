@@ -25,7 +25,7 @@ class GUImap(App):
 
             #draws lines between the difrent teritories
             for neighbor in territory.neighbors:
-                button.canvas.add(Line(points=[territory.position.multiply(75).add(offset).to_tuple(), neighbor.position.multiply(75).add(offset).to_tuple()], width=1))
+                button.canvas.add(Line(points=[territory.position.multiply(75).add(offset).to_tuple(), neighbor.position.multiply(75).add(offset).to_tuple()], width=2))
 
             #button.bind(on_press=self.callback)
             screen.add_widget(button)
