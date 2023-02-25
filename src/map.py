@@ -15,8 +15,6 @@ class Map:
         self.territories[territory.name] = territory
 
     def is_connected(self, t1, t2):
-        if(t1.position.min_distance(t2.position) <= 1):
-            return True
-        return False
+        return t1.position.min_component_length(t2.position) <= 1
 
 

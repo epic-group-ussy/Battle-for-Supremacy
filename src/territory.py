@@ -13,7 +13,7 @@ class Territory:
     return f"{self.name}: Team:{self.team_id}, Count{self.troop_count}"
   
 
-  def attack(self, num_attackers):
+  def get_attacked(self, num_attackers):
     """returns number to subtract from attackers"""
     defender_count = max(2, self.troop_count)
     attacker_count = max(3, num_attackers)
