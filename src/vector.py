@@ -4,9 +4,9 @@ class Vector:
     self.y = y
   def min_component_length(self):
 
-    if abs(self.x) < abs(self.y):
+    if abs(self.x) > abs(self.y):
       return abs(self.x)
-    if abs(self.y) < abs(self.x):
+    if abs(self.y) > abs(self.x):
       return abs(self.y)
     
   def add(self, other):
