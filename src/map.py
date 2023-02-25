@@ -37,18 +37,18 @@ class Map:
         #KODIAK QUAD (PURPLE)
 
         #GRACIE'S GANG (GREEN)
-        self.GTD("Colby", "Gracies Gang", Vector(11,6))
+        self.GTD("Colby", "Gracies Gang", Vector(11,5))
 
-        self.GTD("Resident Halls", "Gracies Gang", Vector(10,7))
-        self.GTD("Gleson", "Gracies Gang", Vector(12,7))
+        self.GTD("Resident Halls", "Gracies Gang", Vector(10,4))
+        self.GTD("Gleson", "Gracies Gang", Vector(12,4))
 
-        self.GTD("Bike Path", "Gracies Gang", Vector(9,8))
-        self.GTD("Gracies", "Gracies Gang", Vector(10,8))
-        self.GTD("Baker", "Gracies Gang", Vector(11,8))
+        self.GTD("Bike Path", "Gracies Gang", Vector(9,3))
+        self.GTD("Gracies", "Gracies Gang", Vector(10,3))
+        self.GTD("Baker", "Gracies Gang", Vector(11,3))
 
-        self.GTD("Firepit", "Gracies Gang", Vector(11,9))
+        self.GTD("Firepit", "Gracies Gang", Vector(11,2))
 
-        self.GTD("Crack Shack", "Gracies Gang", Vector(10,10))
+        self.GTD("Crack Shack", "Gracies Gang", Vector(10,1))
 
 
         #COMMONS CRUSADERS (YELLOW)
