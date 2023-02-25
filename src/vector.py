@@ -7,6 +7,14 @@ class Vector:
       return self.x
     if self.y < self.x:
       return self.y
+  def add(self, other):
+    return Vector(self.x+other.x, self.y+other.y)
+  def subtract(self, other):
+    return Vector(self.x-other.x, self.y-other.y)
+  def multiply(self, scalar):
+    return Vector(self.x*scalar,self.y*scalar)
+  def divide(self, scalar):
+    return Vector(self.x/scalar, self.y/scalar)
     
 
 
