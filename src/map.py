@@ -66,6 +66,12 @@ class Map:
         self.GTD("NRH", "Commons Crusaders", Vector(11,6))
 
         #extra connections
+        
+        
+        self.territories["F-Lot"].add_neighbor(self.territories["L-Lot"])
+        self.territories["L-Lot"].add_neighbor(self.territories["U-Lot"])
+        self.territories["U-Lot"].add_neighbor(self.territories["S-Lot"])
+        self.territories["S-Lot"].add_neighbor(self.territories["F-Lot"])
 
         return
     def create_territory(self, territory):
