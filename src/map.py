@@ -14,7 +14,13 @@ class Map:
     def create_territory(self, territory):
         self.territories[territory.name] = territory
 
-    def is_connected(self, t1, t2):
-        return t1.position.min_component_length(t2.position) <= 1
+        for other_territory_name in self.territories:
+            other_territory = self.territories[other_territory_name]
+            if(     territory.should_connect(other_territory)  ):
+                territory.add_neighbor(other_territory)
+        
+
+
+
 
 

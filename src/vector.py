@@ -17,6 +17,5 @@ class Vector:
     return Vector(self.x/scalar, self.y/scalar)
   def to_tuple(self):
     return (self.x, self.y)
-    
 
 

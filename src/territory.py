@@ -9,14 +9,24 @@ class Territory:
     self.continent_id = -1
     self.troop_count = 0
 
+    self.neighbors = []
+
   def __str__(self):
     return f"{self.name}: Team:{self.team_id}, Count{self.troop_count}"
   
-
+  def should_connect(self, t2):
+    return self.position.substract(t2.position).min_component_length() <= 1
+  
+  def add_neighbor(self, other):
+    if not other in self.neighbors:
+      self.neighbors.append(other)
+    if not self in other.neighbors:
+      other.neighbors.append(self)
+    
   def get_attacked(self, num_attackers):
     """returns number to subtract from attackers"""
-    defender_count = max(2, self.troop_count)
-    attacker_count = max(3, num_attackers)
+    defender_count = min(2, self.troop_count)
+    attacker_count = min(3, num_attackers)
 
     defender_die = []
     attacker_die = []
