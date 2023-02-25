@@ -41,6 +41,8 @@ class Map:
 
         self.GTD("NRH", "Commons Crusaders", Vector(5,11))
 
+        #extra connections
+
         return
     def create_territory(self, territory):
         self.territories[territory.name] = territory
