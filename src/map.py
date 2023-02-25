@@ -9,21 +9,26 @@ class Map:
 
 
         #GLOBAL VILLAGE (BLUE)
-        self.GTD("GV Apartments","Global Village",Vector(1,5))
-        self.GTD("Salsas","Global Village",Vector(2,6))
-        self.GTD("Crossroads","Global Village",Vector(2,7))
-        self.GTD("S-Lot","Global Village",Vector(2,8))
-        self.GTD("Midnight Oil","Global Village",Vector(3,7))
+        self.GTD("GV Apartments","Global Village",Vector(1,6))
+        self.GTD("Salsas","Global Village",Vector(2,5))
+        self.GTD("Crossroads","Global Village",Vector(2,4))
+        self.GTD("S-Lot","Global Village",Vector(2,3))
+        self.GTD("Midnight Oil","Global Village",Vector(3,4))
 
         #FAR CAMPUS (RED)
-        self.GTD("SUS","Far Campus",Vector(3,2))
-        self.GTD("Red Barn", "Far Campus",Vector(2,3))
-        self.GTD("Slaughter","Far Campus",Vector(3,4))
-        self.GTD("Innovation","Far Campus",Vector(3,5))
-        self.GTD("Golisano","Far Campus",Vector(4,4))
+        self.GTD("SUS","Far Campus",Vector(3,9))
+        self.GTD("Red Barn", "Far Campus",Vector(2,8))
+        self.GTD("Slaughter","Far Campus",Vector(3,7))
+        self.GTD("Innovation","Far Campus",Vector(3,6))
+        self.GTD("Golisano","Far Campus",Vector(4,7))
 
         #PI QUAD (YELLOW)
-        
+
+        self.GTD("Institute","Pi Quad",Vector(4,8))
+        self.GTD("Imaging Center", "Pi Quad",Vector(5,9))
+        self.GTD("Magic","Pi Quad",Vector(6,9))
+        self.GTD("Ganenett","Pi Quad",Vector(6,8))
+        self.GTD("F-Lot","Pi Quad",Vector(7,10))
 
         #INFINITY QUAD (ORANGE)
 
