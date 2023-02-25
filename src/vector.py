@@ -2,12 +2,8 @@ class Vector:
   def __init__(self, x, y):
     self.x = x
     self.y = y
-  def min_component_length(self):
-
-    if abs(self.x) > abs(self.y):
-      return abs(self.x)
-    if abs(self.y) > abs(self.x):
-      return abs(self.y)
+  def max_component_length(self):
+    return max(abs(self.x), abs(self.y))
     
   def add(self, other):
     return Vector(self.x+other.x, self.y+other.y)
