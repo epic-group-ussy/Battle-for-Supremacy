@@ -1,7 +1,7 @@
 import random
 
 class Territory:
-  def __init__(self, name, position):
+  def __init__(self, name, continent_name, position):
     self.position = position
 
     self.name = name
