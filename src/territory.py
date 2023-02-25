@@ -6,7 +6,7 @@ class Territory:
 
     self.name = name
     self.team_id = -1
-    self.continent_id = -1
+    self.continent_name = ""
     self.troop_count = 0
 
     self.neighbors = []
