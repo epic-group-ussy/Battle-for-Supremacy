@@ -16,8 +16,14 @@ class Map:
         self.GTD("Midnight Oil","Global Village",Vector(3,7))
 
         #FAR CAMPUS (RED)
+        self.GTD("SUS","Far Campus",Vector(3,2))
+        self.GTD("Red Barn", "Far Campus",Vector(2,3))
+        self.GTD("Slaughter","Far Campus",Vector(3,4))
+        self.GTD("Innovation","Far Campus",Vector(3,5))
+        self.GTD("Golisano","Far Campus",Vector(4,4))
 
         #PI QUAD (YELLOW)
+        self.GTD()
 
         #INFINITY QUAD (ORANGE)
 
