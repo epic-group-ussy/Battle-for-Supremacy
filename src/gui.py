@@ -23,6 +23,14 @@ class GUImap(App):
         #each button will have a label with the territory name
         #each button will have a label with the troop count
         #each button will have a label with the team id
+        #draws lines between the difrent teritories
+        for territory_name in MAp.territories:
+            territory = MAp.territories[territory_name]
+            for neighbor in territory.neighbors:
+                screen.canvas.add(Line(points=[
+                    territory.position.multiply(tile_size).add(center_offset).to_tuple(), 
+                    neighbor.position.multiply(tile_size).add(center_offset).to_tuple()
+                ], width=2))
         for territory_name in MAp.territories:
 
             territory = MAp.territories[territory_name]
@@ -32,14 +40,6 @@ class GUImap(App):
                             size=(button_size, button_size),
                             pos=territory.position.multiply(tile_size).to_tuple()
                         )
-
-            #draws lines between the difrent teritories
-            for neighbor in territory.neighbors:
-                button.canvas.add(Line(points=[
-                    territory.position.multiply(tile_size).add(center_offset).to_tuple(), 
-                    neighbor.position.multiply(tile_size).add(center_offset).to_tuple()
-                ], width=2))
-
             #button.bind(on_press=self.callback)
             screen.add_widget(button)
         return screen
