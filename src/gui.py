@@ -40,6 +40,7 @@ class GUImap(App):
                             size=(button_size, button_size),
                             pos=territory.position.multiply(tile_size).to_tuple()
                         )
+
             #button.bind(on_press=self.callback)
             screen.add_widget(button)
         return screen
