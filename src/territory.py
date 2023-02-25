@@ -2,9 +2,11 @@
 
 class Territory:
   def __init__(self, name, position):
-    self.name = name
     self.position = position
+
+    self.name = name
     self.team_id = -1
+    self.continent_id = -1
     self.troop_count = 0
 
   def __str__(self):
