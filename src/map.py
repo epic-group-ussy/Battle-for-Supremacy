@@ -6,9 +6,12 @@ class Map:
         """ALL VECTORS ARE 0,0 AS A PLACEHOLDER
         PLEASE PLEASE PLEASE DONT FORGET TO CHANGE YOU FUCKING IDIOT KILL YOURSLEF"""
         self.territories = {}
+        self.colors = {}
 
 
         #GLOBAL VILLAGE (BLUE)
+        self.colors["Global Village"] = "0000FF"
+        
         self.GTD("GV Apartments","Global Village",Vector(1,6))
         self.GTD("Salsas","Global Village",Vector(2,5))
         self.GTD("Crossroads","Global Village",Vector(2,4))
@@ -16,6 +19,8 @@ class Map:
         self.GTD("Midnight Oil","Global Village",Vector(3,4))
 
         #FAR CAMPUS (RED)
+        self.colors["Far Campus"] = "FF0000"
+
         self.GTD("SUS","Far Campus",Vector(3,9))
         self.GTD("Red Barn", "Far Campus",Vector(2,8))
         self.GTD("Slaughter","Far Campus",Vector(3,7))
@@ -23,6 +28,7 @@ class Map:
         self.GTD("Golisano","Far Campus",Vector(4,7))
 
         #PI QUAD (YELLOW)
+        self.colors["Pi Quad"] = "FFFF00"
 
         self.GTD("Institute","Pi Quad",Vector(4,8))
         self.GTD("Imaging Center", "Pi Quad",Vector(5,9))
@@ -31,12 +37,22 @@ class Map:
         self.GTD("F-Lot","Pi Quad",Vector(7,10))
 
         #INFINITY QUAD (ORANGE)
+        self.colors["Infinity Quad"] = "FFA500"
+
+        self.GTD("Orange Hall","Infinity Quad",Vector(4,5))
+        self.GTD("Gleason","Infinity Quad",Vector(5,7))
+        self.GTD("Gosnell","Infinity Quad",Vector(5,5))
+        self.GTD("Libtard Arts","Infinity Quad",Vector(6,6))
 
         #SAU (TEAL)
+        self.colors["SAU"] = "008080"
 
         #KODIAK QUAD (PURPLE)
+        self.colors["Kodiak Quad"] = "A020F0"
 
         #GRACIE'S GANG (GREEN)
+        self.colors["Gracies gang"] = "00FF00"
+
         self.GTD("Colby", "Gracies Gang", Vector(11,6))
 
         self.GTD("Resident Halls", "Gracies Gang", Vector(10,7))
@@ -52,6 +68,8 @@ class Map:
 
 
         #COMMONS CRUSADERS (YELLOW)
+        self.colors["Commons Crusaders"] = "FFDB58"
+
         self.GTD("NTID", "Commons Crusaders", Vector(11,1))
 
         self.GTD("Commons", "Commons Crusaders", Vector(10,2))
