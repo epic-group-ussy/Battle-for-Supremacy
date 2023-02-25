@@ -19,7 +19,7 @@ class GUImap(App):
         for territory_name in MAp.territories:
             territory = MAp.territories[territory_name]
 
-            button = Button(text=territory.name, size_hint=(None, None), size=(100, 100), pos=territory.position.multiply(100).add(offset).to_tuple())
+            button = Button(text=territory.name, size_hint=(None, None), size=(75, 75), pos=territory.position.multiply(100).add(offset).to_tuple())
             #button.bind(on_press=self.callback)
             screen.add_widget(button)
         return screen
