@@ -23,7 +23,7 @@ class Map:
         self.GTD("Golisano","Far Campus",Vector(4,4))
 
         #PI QUAD (YELLOW)
-        self.GTD()
+        
 
         #INFINITY QUAD (ORANGE)
 
