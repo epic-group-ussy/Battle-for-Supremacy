@@ -51,39 +51,49 @@ class Map:
         self.colors["Kodiak Quad"] = "A020F0"
 
         #GRACIE'S GANG (GREEN)
+
         self.colors["Gracies gang"] = "00FF00"
 
-        self.GTD("Colby", "Gracies Gang", Vector(11,6))
+        self.GTD("Colby", "Gracies Gang", Vector(11,5))
 
-        self.GTD("Resident Halls", "Gracies Gang", Vector(10,7))
-        self.GTD("Gleson", "Gracies Gang", Vector(12,7))
 
-        self.GTD("Bike Path", "Gracies Gang", Vector(9,8))
-        self.GTD("Gracies", "Gracies Gang", Vector(10,8))
-        self.GTD("Baker", "Gracies Gang", Vector(11,8))
+        self.GTD("Resident Halls", "Gracies Gang", Vector(10,4))
+        self.GTD("Gleson", "Gracies Gang", Vector(12,4))
 
-        self.GTD("Firepit", "Gracies Gang", Vector(11,9))
+        self.GTD("Bike Path", "Gracies Gang", Vector(9,3))
+        self.GTD("Gracies", "Gracies Gang", Vector(10,3))
+        self.GTD("Baker", "Gracies Gang", Vector(11,3))
 
-        self.GTD("Crack Shack", "Gracies Gang", Vector(10,10))
+        self.GTD("Firepit", "Gracies Gang", Vector(11,2))
+
+        self.GTD("Crack Shack", "Gracies Gang", Vector(10,1))
 
 
         #COMMONS CRUSADERS (YELLOW)
+
         self.colors["Commons Crusaders"] = "FFDB58"
 
-        self.GTD("NTID", "Commons Crusaders", Vector(11,1))
+        self.GTD("NTID", "Commons Crusaders", Vector(11,10))
 
-        self.GTD("Commons", "Commons Crusaders", Vector(10,2))
-        self.GTD("Ellingson", "Commons Crusaders", Vector(11,2))
-        self.GTD("L-Lot", "Commons Crusaders", Vector(12,2))
 
-        self.GTD("Gibson", "Commons Crusaders", Vector(11,3))
+        self.GTD("Commons", "Commons Crusaders", Vector(10,9))
+        self.GTD("Ellingson", "Commons Crusaders", Vector(11,9))
+        self.GTD("L-Lot", "Commons Crusaders", Vector(12,9))
 
-        self.GTD("Fish", "Commons Crusaders", Vector(10,4))
-        self.GTD("Sol", "Commons Crusaders", Vector(12,4))
+        self.GTD("Gibson", "Commons Crusaders", Vector(11,8))
 
-        self.GTD("NRH", "Commons Crusaders", Vector(11,5))
+        self.GTD("Fish", "Commons Crusaders", Vector(10,7))
+        self.GTD("Sol", "Commons Crusaders", Vector(12,7))
+
+        self.GTD("NRH", "Commons Crusaders", Vector(11,6))
 
         #extra connections
+        
+        
+        self.territories["F-Lot"].add_neighbor(self.territories["L-Lot"])
+        self.territories["L-Lot"].add_neighbor(self.territories["U-Lot"])
+        self.territories["U-Lot"].add_neighbor(self.territories["S-Lot"])
+        self.territories["S-Lot"].add_neighbor(self.territories["F-Lot"])
 
         return
     def create_territory(self, territory):

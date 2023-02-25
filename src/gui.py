@@ -11,8 +11,14 @@ class GUImap(App):
         """builds the gui"""
         screen = Screen()
 
+        tile_size = 75
+        button_size_multiplier = .66666
+        #calculated
+        button_size = tile_size * button_size_multiplier
+        center_offset = Vector(button_size/2, button_size/2)
+
         MAp=map.Map()
-        offset = Vector(25, 25)
+        
         #creates a map of buttons from the map object from map.py for each territory
         #each button will have a label with the territory name
         #each button will have a label with the troop count
@@ -21,11 +27,18 @@ class GUImap(App):
 
             territory = MAp.territories[territory_name]
 
-            button = Button(text=territory.name, size_hint=(None, None), size=(50, 50), pos=territory.position.multiply(75).to_tuple())
+            button = Button(text=territory.name,
+                            size_hint=(None, None),
+                            size=(button_size, button_size),
+                            pos=territory.position.multiply(tile_size).to_tuple()
+                        )
 
             #draws lines between the difrent teritories
             for neighbor in territory.neighbors:
-                button.canvas.add(Line(points=[territory.position.multiply(75).add(offset).to_tuple(), neighbor.position.multiply(75).add(offset).to_tuple()], width=1))
+                button.canvas.add(Line(points=[
+                    territory.position.multiply(tile_size).add(center_offset).to_tuple(), 
+                    neighbor.position.multiply(tile_size).add(center_offset).to_tuple()
+                ], width=2))
 
             #button.bind(on_press=self.callback)
             screen.add_widget(button)
