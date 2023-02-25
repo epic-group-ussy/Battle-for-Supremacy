@@ -8,7 +8,12 @@ class Map:
         self.territories = {}
 
 
-        #GLOBAL VILLAGE CONT (BLUE)
+        #GLOBAL VILLAGE (BLUE)
+        self.GTD("GV Apartments","Global Village",Vector(1,5))
+        self.GTD("Salsas","Global Village",Vector(2,6))
+        self.GTD("Crossroads","Global Village",Vector(2,7))
+        self.GTD("S-Lot","Global Village",Vector(2,8))
+        self.GTD("Midnight Oil","Global Village",Vector(3,7))
 
         #FAR CAMPUS (RED)
 
