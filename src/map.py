@@ -48,11 +48,13 @@ class Map:
         self.colors["SAU"] = "008080"
         
         self.GTD("U-Lot", "SAU", Vector(8,2))
+        self.GTD("Saunders","SAU",Vector(5,4))
+        self.GTD("Hockey Rink","SAU",Vector(7,3))
+        self.GTD("Ritz","SAU",Vector(8,4))
+        self.GTD("Turf Field","SAU",Vector(6,3))
         
         #KODIAK QUAD (PURPLE)
         self.colors["Kodiak Quad"] = "A020F0"
-
-        
         self.GTD("Eastman", "Gracies Gang", Vector(7,7))
         self.GTD("Fireside", "Gracies Gang", Vector(8,6))
         self.GTD("Gym\nHealth center", "Gracies Gang", Vector(9,6))
