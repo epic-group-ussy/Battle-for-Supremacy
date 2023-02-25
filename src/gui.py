@@ -12,7 +12,7 @@ class GUImap(App):
         screen = Screen()
 
         tile_size = 75
-        button_size_multiplier = .66666
+        button_size_multiplier = 2/3
         #calculated
         button_size = tile_size * button_size_multiplier
         center_offset = Vector(button_size/2, button_size/2)
