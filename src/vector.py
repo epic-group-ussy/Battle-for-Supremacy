@@ -2,7 +2,7 @@ class Vector:
   def __init__(self, x, y):
     self.x = x
     self.y = y
-  def min_distance(self):
+  def min_component_length(self):
     if self.x < self.y:
       return self.x
     if self.y < self.x:
