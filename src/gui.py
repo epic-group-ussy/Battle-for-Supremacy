@@ -38,8 +38,10 @@ class GUImap(App):
             button = Button(text=territory.name,
                             size_hint=(None, None),
                             size=(button_size, button_size),
-                            pos=territory.position.multiply(tile_size).to_tuple()
+                            pos=territory.position.multiply(tile_size).to_tuple(),
+                            background_color=MAp.colors[territory.continent_name].to_tuple()
                         )
+
             #button.bind(on_press=self.callback)
             screen.add_widget(button)
         return screen
