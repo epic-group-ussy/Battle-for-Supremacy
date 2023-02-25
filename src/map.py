@@ -50,6 +50,14 @@ class Map:
         #KODIAK QUAD (PURPLE)
         self.colors["Kodiak Quad"] = "A020F0"
 
+        
+        self.GTD("Eastman", "Gracies Gang", Vector(7,7))
+        self.GTD("Fireside", "Gracies Gang", Vector(8,6))
+        self.GTD("Gym & Health center", "Gracies Gang", Vector(9,6))
+        self.GTD("Shed", "Gracies Gang", Vector(7,5))
+        self.GTD("Brick city", "Gracies Gang", Vector(8,5))
+
+
         #GRACIE'S GANG (GREEN)
 
         self.colors["Gracies gang"] = "00FF00"
