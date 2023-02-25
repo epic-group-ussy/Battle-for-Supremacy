@@ -23,6 +23,7 @@ class Map:
         self.GTD("Golisano","Far Campus",Vector(4,4))
 
         #PI QUAD (YELLOW)
+
         self.GTD("Institute","Pi Quad",Vector(4,3))
         self.GTD("Imaging Center", "Pi Quad",Vector(5,2))
         self.GTD("Magic","Pi Quad",Vector(6,2))
@@ -36,18 +37,18 @@ class Map:
         #KODIAK QUAD (PURPLE)
 
         #GRACIE'S GANG (GREEN)
-        self.GTD("Colby", "Gracies Gang", Vector(6,11))
+        self.GTD("Colby", "Gracies Gang", Vector(11,6))
 
-        self.GTD("Resident Halls", "Gracies Gang", Vector(6,11))
-        self.GTD("Gleson", "Gracies Gang", Vector(6,11))
+        self.GTD("Resident Halls", "Gracies Gang", Vector(10,7))
+        self.GTD("Gleson", "Gracies Gang", Vector(12,7))
 
-        self.GTD("Bike Path", "Gracies Gang", Vector(6,11))
-        self.GTD("Gracies", "Gracies Gang", Vector(6,11))
-        self.GTD("Baker", "Gracies Gang", Vector(6,11))
+        self.GTD("Bike Path", "Gracies Gang", Vector(9,8))
+        self.GTD("Gracies", "Gracies Gang", Vector(10,8))
+        self.GTD("Baker", "Gracies Gang", Vector(11,8))
 
-        self.GTD("Firepit", "Gracies Gang", Vector(6,11))
+        self.GTD("Firepit", "Gracies Gang", Vector(11,9))
 
-        self.GTD("Crack Shack", "Gracies Gang", Vector(6,11))
+        self.GTD("Crack Shack", "Gracies Gang", Vector(10,10))
 
 
         #COMMONS CRUSADERS (YELLOW)

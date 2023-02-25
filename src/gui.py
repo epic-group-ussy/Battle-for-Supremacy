@@ -12,7 +12,7 @@ class GUImap(App):
         screen = Screen()
 
         MAp=map.Map()
-        offset = Vector(200, 200)
+        offset = Vector(0, 0)
         #creates a map of buttons from the map object from map.py for each territory
         #each button will have a label with the territory name
         #each button will have a label with the troop count
