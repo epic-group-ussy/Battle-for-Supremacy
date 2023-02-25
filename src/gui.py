@@ -2,10 +2,10 @@ import kivy
 from kivy.app import App
 from kivy.uix.button import Button
 from kivymd.uix.screen import Screen
-
 from vector import Vector
 import map
 from kivy.uix.floatlayout import FloatLayout
+
 class GUImap(App):
     def build(self):
         screen = Screen()
@@ -19,7 +19,7 @@ class GUImap(App):
         for territory_name in MAp.territories:
             territory = MAp.territories[territory_name]
 
-            button = Button(text=territory.name, size_hint=(None, None), size=(100, 100), pos=territory.position.add(offset).to_tuple())
+            button = Button(text=territory.name, size_hint=(None, None), size=(100, 100), pos=territory.position.multiply(100).add(offset).to_tuple())
             #button.bind(on_press=self.callback)
             screen.add_widget(button)
         return screen
