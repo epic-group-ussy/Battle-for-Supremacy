@@ -32,26 +32,42 @@ class Map:
         #KODIAK QUAD (PURPLE)
 
         #GRACIE'S GANG (GREEN)
+        self.GTD("Colby", "Gracies Gang", Vector(6,11))
+
+        self.GTD("Resident Halls", "Gracies Gang", Vector(6,11))
+        self.GTD("Gleson", "Gracies Gang", Vector(6,11))
+
+        self.GTD("Bike Path", "Gracies Gang", Vector(6,11))
+        self.GTD("Gracies", "Gracies Gang", Vector(6,11))
+        self.GTD("Baker", "Gracies Gang", Vector(6,11))
+
+        self.GTD("Firepit", "Gracies Gang", Vector(6,11))
+
+        self.GTD("Crack Shack", "Gracies Gang", Vector(6,11))
+
 
         #COMMONS CRUSADERS (YELLOW)
-        self.GTD("NTID", "Commons Crusaders", Vector(1,11))
+        self.GTD("NTID", "Commons Crusaders", Vector(11,1))
 
-        self.GTD("Commons", "Commons Crusaders", Vector(2,10))
-        self.GTD("Ellingson", "Commons Crusaders", Vector(2,11))
-        self.GTD("L-Lot", "Commons Crusaders", Vector(2,12))
+        self.GTD("Commons", "Commons Crusaders", Vector(10,2))
+        self.GTD("Ellingson", "Commons Crusaders", Vector(11,2))
+        self.GTD("L-Lot", "Commons Crusaders", Vector(12,2))
 
-        self.GTD("Gibson", "Commons Crusaders", Vector(3,11))
+        self.GTD("Gibson", "Commons Crusaders", Vector(11,3))
 
-        self.GTD("Fish", "Commons Crusaders", Vector(4,10))
-        self.GTD("Sol", "Commons Crusaders", Vector(4,12))
+        self.GTD("Fish", "Commons Crusaders", Vector(10,4))
+        self.GTD("Sol", "Commons Crusaders", Vector(12,4))
 
-        self.GTD("NRH", "Commons Crusaders", Vector(5,11))
+        self.GTD("NRH", "Commons Crusaders", Vector(11,5))
+
+        #extra connections
 
         return
     def create_territory(self, territory):
         self.territories[territory.name] = territory
 
         for other_territory_name in self.territories:
+
             other_territory = self.territories[other_territory_name]
             if(     territory.should_connect(other_territory)  ):
                 territory.add_neighbor(other_territory)
