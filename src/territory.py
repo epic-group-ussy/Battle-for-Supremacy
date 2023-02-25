@@ -29,6 +29,15 @@ class Territory:
     defender_die.sort(reverse=True)
     attacker_die.sort(reverse=True)
 
+    attacker_loss = 0
+    defender_loss = 0
+
     #compare and delete
     for i in range(min(attacker_count, defender_count)):
-      
+      if(attacker_die[i] > defender_die[i]):
+        defender_loss+=1
+      else:
+        attacker_loss+=1
+    
+    self.troop_count - defender_loss
+    return attacker_loss
