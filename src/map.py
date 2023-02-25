@@ -8,7 +8,7 @@ class Map:
         self.territories = {}
 
 
-        #GLOBAL VILLAGE CONT (BLUE)
+        #GLOBAL VILLAGE (BLUE)
 
         #FAR CAMPUS (RED)
 
@@ -16,14 +16,25 @@ class Map:
 
         #INFINITY QUAD (ORANGE)
 
-        #SAU THING (TEAL)
+        #SAU (TEAL)
 
         #KODIAK QUAD (PURPLE)
 
         #GRACIE'S GANG (GREEN)
 
-        #COMMONS LOVERS (YELLOW)
+        #COMMONS CRUSADERS (YELLOW)
+        self.GTD("NTID", "Commons Crusaders", Vector(1,11))
 
+        self.GTD("Commons", "Commons Crusaders", Vector(2,10))
+        self.GTD("Ellingson", "Commons Crusaders", Vector(2,11))
+        self.GTD("L-Lot", "Commons Crusaders", Vector(2,12))
+
+        self.GTD("Gibson", "Commons Crusaders", Vector(3,11))
+
+        self.GTD("Fish", "Commons Crusaders", Vector(4,10))
+        self.GTD("Sol", "Commons Crusaders", Vector(4,12))
+
+        self.GTD("NRH", "Commons Crusaders", Vector(5,11))
 
         return
     def create_territory(self, territory):
