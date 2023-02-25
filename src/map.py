@@ -55,7 +55,7 @@ class Map:
         
         self.GTD("Eastman", "Gracies Gang", Vector(7,7))
         self.GTD("Fireside", "Gracies Gang", Vector(8,6))
-        self.GTD("Gym & Health center", "Gracies Gang", Vector(9,6))
+        self.GTD("Gym\nHealth center", "Gracies Gang", Vector(9,6))
         self.GTD("Shed", "Gracies Gang", Vector(7,5))
         self.GTD("Brick city", "Gracies Gang", Vector(8,5))
 
@@ -67,7 +67,7 @@ class Map:
         self.GTD("Colby", "Gracies Gang", Vector(11,5))
 
 
-        self.GTD("Resident Halls", "Gracies Gang", Vector(10,4))
+        self.GTD("Resident\nHalls", "Gracies Gang", Vector(10,4))
         self.GTD("Gleson", "Gracies Gang", Vector(12,4))
 
         self.GTD("Bike Path", "Gracies Gang", Vector(9,3))
@@ -104,6 +104,9 @@ class Map:
         self.territories["L-Lot"].add_neighbor(self.territories["U-Lot"])
         self.territories["U-Lot"].add_neighbor(self.territories["S-Lot"])
         self.territories["S-Lot"].add_neighbor(self.territories["F-Lot"])
+        
+        self.territories["Resident\nHalls"].add_neighbor(self.territories["Gym\nHealth center"])
+        self.territories["Crack Shack"].add_neighbor(self.territories["U-Lot"])
 
         return
     def create_territory(self, territory):
