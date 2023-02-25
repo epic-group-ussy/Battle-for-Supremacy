@@ -3,8 +3,18 @@ from territory import Territory
 class Map:
     def __init__(self):
         self.territories = []
-        
-        for i in range(10):
-            self.territories.append(Territory("Sussy"))
+
+        gibson = Territory("gibson")
+        ohio = Territory("ohio")
+        sol = Territory("sol")
+        fish = Territory("fish")
+
+        gibson.create_link(sol)
+        gibson.create_link(ohio)
+        gibson.create_link(fish)
+        fish.create_link(sol)
 
         return
+    
+
+

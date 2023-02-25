@@ -9,3 +9,9 @@ class Territory:
 
   def __str__(self):
     return f"{self.name}: Team:{self.team_id}, Count{self.troop_count}"
+  
+  def create_link(self, t):
+    if not t in self.neighbors:
+      self.neighbors.append(t)
+    if not self in t.neighbors:
+      t.neighbors.append(self)
