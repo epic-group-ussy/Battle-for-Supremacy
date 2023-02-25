@@ -3,11 +3,11 @@ class Vector:
     self.x = x
     self.y = y
   def min_component_length(self):
-    
-    if self.x < self.y:
-      return self.x
-    if self.y < self.x:
-      return self.y
+
+    if abs(self.x) < abs(self.y):
+      return abs(self.x)
+    if abs(self.y) < abs(self.x):
+      return abs(self.y)
     
   def add(self, other):
     return Vector(self.x+other.x, self.y+other.y)
