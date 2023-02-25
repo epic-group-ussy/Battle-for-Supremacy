@@ -15,7 +15,7 @@ class Territory:
     return f"{self.name}: Team:{self.team_id}, Count{self.troop_count}"
   
   def should_connect(self, t2):
-    return self.position.subtract(t2.position).min_component_length() <= 1
+    return self.position.subtract(t2.position).min_component_length() == 1
   
   def add_neighbor(self, other):
     if not other in self.neighbors:
