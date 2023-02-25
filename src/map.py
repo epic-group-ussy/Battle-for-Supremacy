@@ -52,18 +52,18 @@ class Map:
 
 
         #COMMONS CRUSADERS (YELLOW)
-        self.GTD("NTID", "Commons Crusaders", Vector(11,1))
+        self.GTD("NTID", "Commons Crusaders", Vector(11,10))
 
-        self.GTD("Commons", "Commons Crusaders", Vector(10,2))
-        self.GTD("Ellingson", "Commons Crusaders", Vector(11,2))
-        self.GTD("L-Lot", "Commons Crusaders", Vector(12,2))
+        self.GTD("Commons", "Commons Crusaders", Vector(10,9))
+        self.GTD("Ellingson", "Commons Crusaders", Vector(11,9))
+        self.GTD("L-Lot", "Commons Crusaders", Vector(12,9))
 
-        self.GTD("Gibson", "Commons Crusaders", Vector(11,3))
+        self.GTD("Gibson", "Commons Crusaders", Vector(11,8))
 
-        self.GTD("Fish", "Commons Crusaders", Vector(10,4))
-        self.GTD("Sol", "Commons Crusaders", Vector(12,4))
+        self.GTD("Fish", "Commons Crusaders", Vector(10,7))
+        self.GTD("Sol", "Commons Crusaders", Vector(12,7))
 
-        self.GTD("NRH", "Commons Crusaders", Vector(11,5))
+        self.GTD("NRH", "Commons Crusaders", Vector(11,6))
 
         #extra connections
 
