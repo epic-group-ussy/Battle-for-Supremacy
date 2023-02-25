@@ -46,7 +46,9 @@ class Map:
 
         #SAU (TEAL)
         self.colors["SAU"] = "008080"
-
+        
+        self.GTD("U-Lot", "SAU", Vector(8,2))
+        
         #KODIAK QUAD (PURPLE)
         self.colors["Kodiak Quad"] = "A020F0"
 
