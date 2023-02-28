@@ -69,18 +69,14 @@ class Map:
 
         self.colors["Gracies Gang"] = (0,1,0,1)
 
+
         self.GTD("Colby", "Gracies Gang", Vector(11,5))
-
-
         self.GTD("Resident\nHalls", "Gracies Gang", Vector(10,4))
         self.GTD("Gleson", "Gracies Gang", Vector(12,4))
-
         self.GTD("Bike Path", "Gracies Gang", Vector(9,3))
         self.GTD("Gracies", "Gracies Gang", Vector(10,3))
         self.GTD("Baker", "Gracies Gang", Vector(11,3))
-
         self.GTD("Firepit", "Gracies Gang", Vector(11,2))
-
         self.GTD("Crack Shack", "Gracies Gang", Vector(10,1))
 
 
@@ -89,17 +85,12 @@ class Map:
         self.colors["Commons Crusaders"] = (1,.85,.34,1)
 
         self.GTD("NTID", "Commons Crusaders", Vector(11,10))
-
-
         self.GTD("Commons", "Commons Crusaders", Vector(10,9))
         self.GTD("Ellingson", "Commons Crusaders", Vector(11,9))
         self.GTD("L-Lot", "Commons Crusaders", Vector(12,9))
-
         self.GTD("Gibson", "Commons Crusaders", Vector(11,8))
-
         self.GTD("Fish", "Commons Crusaders", Vector(10,7))
         self.GTD("Sol", "Commons Crusaders", Vector(12,7))
-
         self.GTD("NRH", "Commons Crusaders", Vector(11,6))
 
         #extra connections
