@@ -10,9 +10,9 @@ class Map:
 
 
         #GLOBAL VILLAGE (BLUE)
-        self.colors["Global Village"] = (0,0,1,1)
+        self.colors["Global Village"] = (52/255,144/255,220/255,1)
         
-        self.GTD("GV Apartments","Global Village",Vector(1,6))
+        self.GTD("GV Apartments","Global Village",Vector(1,5))
         self.GTD("Salsas","Global Village",Vector(2,5))
         self.GTD("Crossroads","Global Village",Vector(2,4))
         self.GTD("S-Lot","Global Village",Vector(2,3))

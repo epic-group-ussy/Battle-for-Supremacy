@@ -8,7 +8,7 @@ class Territory:
     self.team_id = -1
     self.continent_name = continent_name
     self.troop_count = 0
-
+    self.card_troop_count = 1 
     self.neighbors = []
 
   def __str__(self):
