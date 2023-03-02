@@ -17,6 +17,13 @@ Builder.load_file('gui.kv')
 class TerritoryButton(Button):
     pass
 
+class PlayerGUIScreen(Screen):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        Clock.schedule_once(self._build_map)
+    
+    def _build_player_ui(self, dt):
+        pass
 
 class GUIMapScreen(Screen):
     content_area = ObjectProperty()
@@ -63,14 +70,17 @@ class GUIMapScreen(Screen):
                 )
 
             self.content_area.add_widget(button)
-
+    
 
 class GUIMapApp(App):
     def build(self):
         # create screen manager and add GUIMapScreen
         screen_manager = ScreenManager()
         guimap_screen = GUIMapScreen(name='map_screen')
+        #adds the guimap_screen tho the left and center third of the screen
         screen_manager.add_widget(guimap_screen)
+        #adds the player controols to the right third of the screen
+        
         return screen_manager
 
 
