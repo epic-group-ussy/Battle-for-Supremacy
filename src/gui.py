@@ -18,7 +18,7 @@ class GUImap(App):
         center_offset = Vector(button_size/2, button_size/2)
 
         MAp=map.Map()
-        
+
         #creates a map of buttons from the map object from map.py for each territory
         #each button will have a label with the territory name
         #each button will have a label with the troop count
@@ -39,16 +39,21 @@ class GUImap(App):
             territory = MAp.territories[territory_name]
 
             button = Button(text=territory.name,
+                            color = (0.25,0.25,0.25,1),
+                            
                             size_hint=(None, None),
                             size=(button_size, button_size),
                             pos=territory.position.multiply(tile_size).to_tuple(),
-                            background_color=MAp.colors[territory.continent_name]
+                            background_color=MAp.colors[territory.continent_name],
+                            background_normal=''
                         )
 
             #button.bind(on_press=self.callback)
             screen.add_widget(button)
+        
+        
+        
+        
         return screen
-
-        #return self.root
 
 GUImap().run()

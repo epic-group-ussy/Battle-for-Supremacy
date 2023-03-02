@@ -19,7 +19,7 @@ class Map:
         self.GTD("Midnight Oil","Global Village",Vector(3,4))
 
         #FAR CAMPUS (RED)
-        self.colors["Far Campus"] = (1,0,0,1)
+        self.colors["Far Campus"] = (227/255,52/255,47/255,1)
 
         self.GTD("SUS","Far Campus",Vector(3,9))
         self.GTD("Red Barn", "Far Campus",Vector(2,8))
@@ -27,8 +27,8 @@ class Map:
         self.GTD("Innovation","Far Campus",Vector(3,6))
         self.GTD("Golisano","Far Campus",Vector(4,7))
 
-        #PI QUAD (YELLOW)
-        self.colors["Pi Quad"] = (1,1,0,1)
+        #PI QUAD (DARK BLUE)
+        self.colors["Pi Quad"] = (101/255,116/255,220/255,1)
 
         self.GTD("Institute","Pi Quad",Vector(4,8))
         self.GTD("Imaging Center", "Pi Quad",Vector(5,9))
@@ -37,7 +37,7 @@ class Map:
         self.GTD("F-Lot","Pi Quad",Vector(7,10))
 
         #INFINITY QUAD (ORANGE)
-        self.colors["Infinity Quad"] = (1,.65,0,1)
+        self.colors["Infinity Quad"] = (246/255,153/255,63/255,1)
 
         self.GTD("Orange Hall","Infinity Quad",Vector(4,5))
         self.GTD("Gleason","Infinity Quad",Vector(5,7))
@@ -45,7 +45,7 @@ class Map:
         self.GTD("Libtard Arts","Infinity Quad",Vector(6,6))
 
         #SAU (TEAL)
-        self.colors["SAU"] = (0,.5,.5,1)
+        self.colors["SAU"] = (77/255,192/255,114/255,1)
         
         self.GTD("U-Lot", "SAU", Vector(8,2))
         self.GTD("Saunders","SAU",Vector(5,4))
@@ -54,7 +54,7 @@ class Map:
         self.GTD("Turf Field","SAU",Vector(6,3))
         
         #KODIAK QUAD (PURPLE)
-        self.colors["Kodiak Quad"] = (.62,.12,.94,1)
+        self.colors["Kodiak Quad"] = (149/255,97/255,226/255,1)
 
         
         self.GTD("Eastman", "Kodiak Quad", Vector(7,7))
@@ -65,9 +65,9 @@ class Map:
 
 
 
-        #GRACIE'S GANG (GREEN)
+        #GRACIE'S GANG (PINK)
 
-        self.colors["Gracies Gang"] = (0,1,0,1)
+        self.colors["Gracies Gang"] = (246/255,109/255,155/255,1)
 
 
         self.GTD("Colby", "Gracies Gang", Vector(11,5))
@@ -82,7 +82,7 @@ class Map:
 
         #COMMONS CRUSADERS (YELLOW)
 
-        self.colors["Commons Crusaders"] = (1,.85,.34,1)
+        self.colors["Commons Crusaders"] = (255/255,237/255,74/255,1)
 
         self.GTD("NTID", "Commons Crusaders", Vector(11,10))
         self.GTD("Commons", "Commons Crusaders", Vector(10,9))
