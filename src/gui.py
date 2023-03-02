@@ -24,6 +24,8 @@ class GUImap(App):
         #each button will have a label with the troop count
         #each button will have a label with the team id
         #draws lines between the difrent teritories
+
+        #deaws the lines between theritiries 
         for territory_name in MAp.territories:
             territory = MAp.territories[territory_name]
             for neighbor in territory.neighbors:
@@ -31,6 +33,7 @@ class GUImap(App):
                     territory.position.multiply(tile_size).add(center_offset).to_tuple(), 
                     neighbor.position.multiply(tile_size).add(center_offset).to_tuple()
                 ], width=2))
+        #draws the contenatnes
         for territory_name in MAp.territories:
 
             territory = MAp.territories[territory_name]
