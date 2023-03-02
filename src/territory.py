@@ -8,7 +8,8 @@ class Territory:
     self.team_id = -1
     self.continent_name = continent_name
     self.troop_count = 0
-    self.card_troop_count = 1 
+    #gets randomly assinged at the creation of the teritory
+    self.card_troop_count = random.randint(2, 5) 
     self.neighbors = []
 
   def __str__(self):
