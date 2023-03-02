@@ -118,9 +118,3 @@ class Map:
     def GTD(self,name,continent_name,vecterpos):
         """Generate Territory Data"""
         self.create_territory(Territory(name,continent_name,vecterpos))
-
-
-
-
-
-
